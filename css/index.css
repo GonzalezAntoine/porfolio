@@ -71,13 +71,15 @@ nav p{
 
 
 .accueil {
-    height: 100vh;
-    background-color: var(--dark);
-    color: var(--light);
-    margin: 0;
-    opacity: 0.9;
-    padding-top: 10vmax;
-    padding-left: 14vmax;
+  height: 100vh;
+  background-color: var(--dark);
+  color: var(--light);
+  margin: 0;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .accueilv2{
@@ -102,6 +104,15 @@ nav p{
     color: var(--dark);
 }
 
+.présentation {
+  margin-left: 5vmax;
+}
+
+.lien a{
+  text-decoration: none;
+  color: var(--light);
+}
+
 .présentation h1{
     font-size: 3.25vmax;
     font-weight: 900;
@@ -109,7 +120,7 @@ nav p{
 
 .photo{
     width: 30%;
-    margin-left: 1vmax;
+    margin-left: 5vmax;
 }
 
 img{
@@ -124,48 +135,18 @@ img{
     font-size: 1.5em;
 }
 
-.carousel__slider ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .carousel {
-    position: relative;
-    overflow: hidden;
-    margin-top: 6vmax;
-  }
-  
-  .carousel__slider {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 80vw;
-    height: 200px;
-  }
-  
-  .carousel__list {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .carousel__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
+.projetAccueil {
+  display: flex;
+  padding-top: 2vmax;
+}
 
-  .carousel__item>* img {
-    width: 300px;
-    object-fit: cover;
-  }
+.projetAccueil .projetProty img{
+  width: 39%;
+}
+
+.projetAccueil .projetPatflix img{
+  width: 90%;
+}
 
   .photos{
     display: flex;
